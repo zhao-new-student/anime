@@ -78,7 +78,9 @@ type Anime = {
 };
 
 export default function AnimeDetailPage() {
-  const { id } = useParams();
+  const params = useParams();
+  const id = params?.id as string; 
+  // const { id } = useParams();
   const [anime, setAnime] = useState<Anime | null>(null);
   const [loading, setLoading] = useState(true);
 

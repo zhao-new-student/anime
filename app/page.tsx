@@ -7,7 +7,14 @@ import PreferenceSelector from './components/PreferenceSelector';
 export default function Home() {
   const router = useRouter();
 
-  const handleStart = (prefs) => {
+interface UserPreferences {
+  emotion: string;
+  genre: string;
+  quality: string;
+}
+
+
+  const handleStart = (prefs: UserPreferences) => {
     // 跳转到推荐页面，同时把偏好通过URL参数传递
     const params = new URLSearchParams({
       emotion: prefs.emotion,
