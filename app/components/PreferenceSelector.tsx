@@ -23,7 +23,7 @@ export default function PreferenceSelector({ onStart }: Props) {
 
     return (
         <div className="bg-white rounded-xl shadow-lg p-6 max-w-lg mx-auto">
-            <h2 className="text-2xl font-bold text-center mb-6">
+            <h2 className="text-2xl font-bold text-center mb-6 text-gray-700">
                 告诉我你想看什么样的番剧
             </h2>
 

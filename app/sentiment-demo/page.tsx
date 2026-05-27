@@ -48,10 +48,10 @@ export default function SentimentDemo() {
   return (
     <div className="min-h-screen bg-gray-50 py-10">
       <div className="max-w-2xl mx-auto px-4">
-        <h1 className="text-2xl font-bold text-center mb-6">番剧评论情感分析演示</h1>
-        <div className="bg-white rounded-lg shadow-md p-6">
+        <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">番剧评论情感分析演示</h1>
+        <div className="bg-white rounded-lg shadow-md p-6 border-2">
           <textarea
-            className="w-full border rounded-lg p-3 mb-4"
+            className="w-full border rounded-lg p-3 mb-4 text-gray-400"
             rows={4}
             placeholder="输入一句番剧评论，例如：这部番的战斗场面太燃了！"
             value={inputText}
@@ -66,11 +66,11 @@ export default function SentimentDemo() {
           </button>
           {result && (
             <div className="mt-6 p-4 bg-gray-100 rounded-lg">
-              <h2 className="font-semibold">分析结果：</h2>
+              <h2 className="font-semibold text-gray-400">分析结果：</h2>
               {result.success ? (
                 <>
-                  <p>情感极性：<span className="font-bold">{result.sentiment}</span></p>
-                  <p>置信度：{(result.confidence * 100).toFixed(2)}%</p>
+                  <p>情感极性：<span className="font-bold text-black-200">{result.sentiment}</span></p>
+                  <p>置信度：<span className="font-bold text-black-200">{(result.confidence * 100).toFixed(2)}%</span> </p>
                   <p className="text-xs text-gray-500 mt-2">{result.mode === 'mock' ? '（演示模式，未配置真实API密钥）' : '（百度NLP API）'}</p>
                 </>
               ) : (

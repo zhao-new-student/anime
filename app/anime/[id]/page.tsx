@@ -131,7 +131,7 @@ export default function AnimeDetailPage() {
 
         {/* 口碑趋势图 */}
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-xl font-semibold mb-4">口碑情感演变趋势</h2>
+          <h2 className="text-xl font-semibold mb-4 text-gray-800">口碑情感演变趋势</h2>
           <ResponsiveContainer width="100%" height={300}>
             <LineChart data={trendData}>
               <CartesianGrid strokeDasharray="3 3" />
@@ -149,7 +149,7 @@ export default function AnimeDetailPage() {
 
         {/* 口碑解析 */}
         <div className="bg-white rounded-lg shadow-md p-6">
-          <h2 className="text-xl font-semibold mb-2">口碑解析</h2>
+          <h2 className="text-xl font-semibold mb-2 text-gray-800">口碑解析</h2>
           {anime.reputationType === '历久弥新' && (
             <p className="text-gray-700">这是一部经得起时间考验的经典作品，长期口碑持续走高，被观众誉为神作。</p>
           )}

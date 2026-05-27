@@ -28,10 +28,10 @@ export default function BoardPage() {
 
   const renderList = (title: string, list: Anime[]) => (
     <div className="bg-white rounded-lg shadow-md p-6 mb-6">
-      <h2 className="text-xl font-semibold mb-4">{title}</h2>
+      <h2 className="text-xl font-semibold mb-4 text-gray-800">{title}</h2>
       <div className="space-y-3">
         {list.map(anime => (
-          <Link key={anime.id} href={`/anime/${anime.id}`} className="flex items-center gap-4 p-3 hover:bg-gray-50 rounded-lg transition">
+          <Link key={anime.id} href={`/anime/${anime.id}`} className=" text-gray-800 flex items-center gap-4 p-3 hover:bg-gray-50 rounded-lg transition">
             <img src={anime.cover} alt={anime.title} className="w-16 h-16 object-cover rounded" />
             <div className="flex-1">
               <div className="font-medium">{anime.title}</div>
@@ -47,7 +47,7 @@ export default function BoardPage() {
   return (
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="max-w-3xl mx-auto px-4">
-        <h1 className="text-2xl font-bold text-center mb-6">番剧口碑看板</h1>
+        <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">番剧口碑看板</h1>
         {renderList('🏆 历久弥新榜（经得起时间考验的经典）', timelessList)}
         {renderList('📈 口碑逆袭榜（后期发力的黑马）', comebackList)}
       </div>
