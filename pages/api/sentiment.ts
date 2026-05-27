@@ -1,6 +1,13 @@
 // pages/api/sentiment.ts
 import type { NextApiRequest, NextApiResponse } from 'next';
 
+interface SentimentResult {
+  items?: Array<{
+    sentiment: number;
+    confidence: number;
+  }>;
+}
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
@@ -45,14 +52,15 @@ export default async function handler(
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ text }),
     });
-    const result = await sentRes.json();
+    const result = await sentRes.json() as SentimentResult;
     
     if (result.items && result.items[0]) {
       const item = result.items[0];
-      const sentimentMap = { 0: '负面', 1: '中性', 2: '正面' };
+      const sentimentMap: Record<number, string> = { 0: '负面', 1: '中性', 2: '正面' };
+      const sentiment = sentimentMap[item.sentiment] || '未知';
       return res.status(200).json({
         success: true,
-        sentiment: sentimentMap[item.sentiment],
+        sentiment,
         confidence: item.confidence,
         mode: 'api',
       });
