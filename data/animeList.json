@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "CLANNAD",
+    "cover": "https://www.dmoe.cc/random.php",
+    "description": "在某个小镇，主角冈崎朋也因为家庭因素成为不良少年。某一天，他在学校坡道前遇到了一个名为古河渚的少女，他的生活开始改变。",
+    "tags": ["治愈", "校园", "催泪", "恋爱"],
+    "rating": 9.2,
+    "reputationType": "历久弥新",
+    "sentimentTrend": [0.8, 0.82, 0.85, 0.88, 0.9, 0.92]
+  },
+  {
+    "id": 2,
+    "title": "进击的巨人",
+    "cover": "https://www.dmoe.cc/random.php",
+    "description": "人类曾一度因被巨人捕猎而濒临灭绝。幸存的人类建造了三重巨大城墙，在隔绝的环境里享受了一百多年的和平。",
+    "tags": ["热血", "战斗", "悬疑", "黑暗", "神作"],
+    "rating": 9.1,
+    "reputationType": "历久弥新",
+    "sentimentTrend": [0.85, 0.88, 0.87, 0.89, 0.91, 0.92]
+  },
+  {
+    "id": 3,
+    "title": "甲铁城的卡巴内瑞",
+    "cover": "https://www.dmoe.cc/random.php",
+    "description": "全世界被钢铁的蒸汽覆盖，不死的怪物出现。少年生驹为了对抗怪物，研发了独特的武器。",
+    "tags": ["热血", "战斗", "末日"],
+    "rating": 7.0,
+    "reputationType": "高开低走",
+    "sentimentTrend": [0.85, 0.82, 0.75, 0.68, 0.62, 0.58]
+  },
+  {
+    "id": 4,
+    "title": "命运石之门",
+    "cover": "https://www.dmoe.cc/random.php",
+    "description": "自称疯狂科学家的主角创立了未来道具研究所，偶然发现了可以向过去发送电子邮件的方法，世界由此开始动摇。",
+    "tags": ["科幻", "悬疑", "慢热", "神作"],
+    "rating": 9.0,
+    "reputationType": "口碑逆袭",
+    "sentimentTrend": [0.65, 0.68, 0.72, 0.78, 0.85, 0.91]
+  },
+  {
+    "id": 5,
+    "title": "鬼灭之刃",
+    "cover": "https://www.dmoe.cc/random.php",
+    "description": "卖炭少年炭治郎，某天全家被鬼杀害。为了让变成鬼的妹妹恢复人身，他加入了鬼杀队。",
+    "tags": ["热血", "战斗", "成长"],
+    "rating": 8.8,
+    "reputationType": "历久弥新",
+    "sentimentTrend": [0.82, 0.85, 0.88, 0.89, 0.90, 0.91]
+  },
+  {
+    "id": 6,
+    "title": "刀剑神域",
+    "cover": "https://www.dmoe.cc/random.php",
+    "description": "无法完全攻略就无法离开游戏，GAME OVER也等于宣告玩家的死亡。主角桐人决定在不被团长击倒的情况下，以完全攻略为目标。",
+    "tags": ["冒险", "科幻", "战斗", "恋爱"],
+    "rating": 8.2,
+    "reputationType": "口碑稳定",
+    "sentimentTrend": [0.78, 0.79, 0.78, 0.77, 0.76, 0.75]
+  }
+]
